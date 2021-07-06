@@ -32,7 +32,7 @@ class LoginViewController: UIViewController, ViewModelBindable {
     func setupElements() {
         self.loginButton.layer.cornerRadius = 13
         self.registerButton.layer.cornerRadius = 15
-        self.registerButton.layer.borderWidth = 2
+        self.registerButton.layer.borderWidth = 1
         self.registerButton.layer.borderColor = UIColor.init(red: 126, green: 119, blue: 132, alpha: 1).cgColor
         self.errorLabel.isHidden = true
         Utilities.styleTextField(self.emailTextField)

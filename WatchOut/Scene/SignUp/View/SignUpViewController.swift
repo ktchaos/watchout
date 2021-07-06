@@ -20,7 +20,6 @@ class SignUpViewController: UIViewController, ViewModelBindable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Become a watcher !"
         setupElements()
     }
     
@@ -47,5 +46,10 @@ class SignUpViewController: UIViewController, ViewModelBindable {
         guard let confirmPassword = self.confirmPasswordTextField.text else { return }
         
         viewModel?.registerNewWatcher(username: username,email: email, password: password, confirmPassword: confirmPassword)
+    }
+    
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        viewModel?.goBack()
     }
 }

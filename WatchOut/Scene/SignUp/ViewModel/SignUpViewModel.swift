@@ -49,4 +49,8 @@ class SignUpViewModel {
             }
         }
     }
+    
+    func goBack() {
+        self.coordinator?.backToLogin()
+    }
 }
