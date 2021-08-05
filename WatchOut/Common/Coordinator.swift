@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol Coordinator: class {
+protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     var isCompleted: (() -> Void)? { get set }
     func start()
@@ -17,11 +17,14 @@ protocol Coordinator: class {
 
 extension Coordinator {
     func start(coordinator: Coordinator) {
+        coordinator.isCompleted = { [weak self, weak coordinator] in
+            if let coordinator = coordinator {
+                self?.free(coordinator: coordinator)
+            }
+        }
+        
         self.childCoordinators.append(coordinator)
         coordinator.start()
-        coordinator.isCompleted = { [weak self] in
-            self?.free(coordinator: coordinator)
-        }
     }
 
     func free(coordinator: Coordinator) {

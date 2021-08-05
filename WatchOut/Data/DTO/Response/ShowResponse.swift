@@ -14,6 +14,7 @@ struct ShowResponse: Codable {
     let language: String
     let genres: [String]
     let status: String
+    let premiered: String
     let image: ImageURLResponse?
     let summary: String?
 }
@@ -32,7 +33,8 @@ struct ShowResponseMapper: DTOMapper {
                     genres: dto.genres,
                     status: dto.status,
                     image: ImageURLResponseMapper.map(image),
-                    summary: dto.summary)
+                    summary: dto.summary,
+                    premiered: dto.premiered)
     }
 }
 

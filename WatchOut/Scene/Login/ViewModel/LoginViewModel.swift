@@ -11,7 +11,7 @@ import Firebase
 
 class LoginViewModel {
     
-    weak var coordinator: LoginCoordinator?
+    var coordinator: LoginCoordinator?
     var errorMessage: Observable<String>
     
     init(coordinator: LoginCoordinator) {

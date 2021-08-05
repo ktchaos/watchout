@@ -16,4 +16,5 @@ struct Show {
     let status: String?
     let image: ImageURL?
     let summary: String?
+    let premiered: String?
 }

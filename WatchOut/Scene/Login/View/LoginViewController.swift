@@ -35,8 +35,13 @@ class LoginViewController: UIViewController, ViewModelBindable {
         self.registerButton.layer.borderWidth = 1
         self.registerButton.layer.borderColor = UIColor.init(red: 126, green: 119, blue: 132, alpha: 1).cgColor
         self.errorLabel.isHidden = true
+        guard let iconEmail = UIImage(systemName: "envelope") else { return }
+        guard let iconLock = UIImage(systemName: "lock") else { return }
+        self.emailTextField.setIcon(iconEmail)
+        self.passwordTextField.setIcon(iconLock)
         Utilities.styleTextField(self.emailTextField)
         Utilities.styleTextField(self.passwordTextField)
+        
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {

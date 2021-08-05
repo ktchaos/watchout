@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class SignUpViewModel {
     
-    weak var coordinator: SignUpCoordinator?
+    var coordinator: SignUpCoordinator?
     var errorMessage: Observable<String>
     
     init(coordinator: SignUpCoordinator) {
@@ -51,6 +51,6 @@ class SignUpViewModel {
     }
     
     func goBack() {
-        self.coordinator?.backToLogin()
+        coordinator?.dismiss()
     }
 }

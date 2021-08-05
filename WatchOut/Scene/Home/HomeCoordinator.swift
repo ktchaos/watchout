@@ -26,4 +26,10 @@ class HomeCoordinator: NavigationCoordinator {
         self.rootViewController.modalPresentationStyle = .fullScreen
         self.rootViewController.viewControllers = [homeViewController]
     }
+    
+    func openShowPopUp(show: Show) {
+        let showPopUp = ShowPopUp()
+        showPopUp.setupShow(show: show)
+        self.rootViewController.view.addSubview(showPopUp)
+    }
 }

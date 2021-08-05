@@ -17,6 +17,8 @@
 		6541C54926900AA4001C348F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6541C54826900AA4001C348F /* HomeCoordinator.swift */; };
 		6541C54C26900ABD001C348F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6541C54B26900ABD001C348F /* MainCoordinator.swift */; };
 		6541C54E26900C37001C348F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6541C54D26900C37001C348F /* HomeViewModel.swift */; };
+		654FAF0F26BC4222005B918C /* ShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654FAF0E26BC4222005B918C /* ShowPopUp.swift */; };
+		654FAF1126BC43F3005B918C /* ShowPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654FAF1026BC43F3005B918C /* ShowPopUp.xib */; };
 		65B81A00268D003900E1A381 /* RemoteSearchShowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B819FF268D003900E1A381 /* RemoteSearchShowDataSource.swift */; };
 		65B81A02268D008D00E1A381 /* SearchShowDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B81A01268D008D00E1A381 /* SearchShowDataSource.swift */; };
 		65B81A0D268D0A1600E1A381 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B81A0B268D0A1600E1A381 /* HomeViewController.swift */; };
@@ -64,6 +66,8 @@
 		6541C54826900AA4001C348F /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		6541C54B26900ABD001C348F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6541C54D26900C37001C348F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		654FAF0E26BC4222005B918C /* ShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPopUp.swift; sourceTree = "<group>"; };
+		654FAF1026BC43F3005B918C /* ShowPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPopUp.xib; sourceTree = "<group>"; };
 		65B819FF268D003900E1A381 /* RemoteSearchShowDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSearchShowDataSource.swift; sourceTree = "<group>"; };
 		65B81A01268D008D00E1A381 /* SearchShowDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowDataSource.swift; sourceTree = "<group>"; };
 		65B81A0B268D0A1600E1A381 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 			children = (
 				65BFE167269104C600E686F3 /* ShowTableViewCell.swift */,
 				65BFE168269104C600E686F3 /* ShowTableViewCell.xib */,
+				654FAF0E26BC4222005B918C /* ShowPopUp.swift */,
+				654FAF1026BC43F3005B918C /* ShowPopUp.xib */,
 			);
 			path = Shows;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				65CA8EBE267AEAC200F4E479 /* LoginViewController.xib in Resources */,
 				65166B79267ACB9900FDA18B /* LaunchScreen.storyboard in Resources */,
 				65B81A0E268D0A1600E1A381 /* HomeViewController.xib in Resources */,
+				654FAF1126BC43F3005B918C /* ShowPopUp.xib in Resources */,
 				65CA8EB9267AD4F200F4E479 /* GoogleService-Info.plist in Resources */,
 				65FD0233268FAD2E00E909A8 /* SignUpViewController.xib in Resources */,
 				65BFE16A269104C600E686F3 /* ShowTableViewCell.xib in Resources */,
@@ -505,6 +512,7 @@
 				65C47E91267C2D50002F3C32 /* RemoteSearchShowService.swift in Sources */,
 				65B81A10268D0A4B00E1A381 /* LoginCoordinator.swift in Sources */,
 				65FD022B268FA65200E909A8 /* ViewModelBindable.swift in Sources */,
+				654FAF0F26BC4222005B918C /* ShowPopUp.swift in Sources */,
 				65B81A0D268D0A1600E1A381 /* HomeViewController.swift in Sources */,
 				6541C54926900AA4001C348F /* HomeCoordinator.swift in Sources */,
 				65B81A00268D003900E1A381 /* RemoteSearchShowDataSource.swift in Sources */,

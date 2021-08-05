@@ -15,10 +15,19 @@ class ShowTableViewCell: UITableViewCell {
     @IBOutlet weak var showiIconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var genresLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setupElements()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.showiIconImageView.image = nil
+        self.titleLabel.text = nil
+        self.genresLabel.text = nil
+        self.yearLabel.text = nil
     }
     
     func setupElements() {
@@ -26,7 +35,6 @@ class ShowTableViewCell: UITableViewCell {
         self.containerView.layer.borderColor = .init(gray: 1, alpha: 1)
         self.containerView.layer.cornerRadius = 13.0
         self.showiIconImageView.layer.cornerRadius = 35
-        self.showiIconImageView.layer.borderWidth = 2
         self.showiIconImageView.layer.borderColor = .init(gray: 1, alpha: 1)
     }
     
@@ -41,5 +49,7 @@ class ShowTableViewCell: UITableViewCell {
             result = "\(g) "
         }
         self.genresLabel.text = result
+        guard let year = show.premiered?.split(separator: "-")[0] else { return }
+        self.yearLabel.text = String(year)
     }
 }

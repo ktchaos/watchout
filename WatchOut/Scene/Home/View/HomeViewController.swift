@@ -24,7 +24,6 @@ class HomeViewController: UIViewController, ViewModelBindable {
 
     func bindViewModel() {
         self.viewModel?.shows.addAndNotify(observer: self, observerBlock: { [weak self] shows in
-            print(shows)
             self?.tableView.reloadData()
         })
     }
@@ -56,5 +55,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.selectedShowAt(index: indexPath.row)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 class HomeViewModel {
     
-    weak var coordinator: HomeCoordinator?
+    var coordinator: HomeCoordinator?
     var homeRepository: HomeRepository
     var shows: Observable<[Show]>
     
@@ -32,5 +32,10 @@ class HomeViewModel {
     
     func searchShows(query: String) {
         homeRepository.getShows(query: query)
+    }
+    
+    func selectedShowAt(index: Int) {
+        let show = self.shows.value[index]
+        self.coordinator?.openShowPopUp(show: show)
     }
 }

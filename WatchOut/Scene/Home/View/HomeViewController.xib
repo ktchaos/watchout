@@ -26,19 +26,19 @@
                     <rect key="frame" x="10" y="54" width="394" height="798"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sho-M5-Jeh">
-                            <rect key="frame" x="8" y="8" width="378" height="782"/>
+                            <rect key="frame" x="2" y="8" width="390" height="788"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-01-1Yy">
-                                    <rect key="frame" x="0.0" y="0.0" width="378" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search show" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-iB-QBn">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                             <color key="textColor" red="1" green="0.91275440730000001" blue="0.59011015379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-v5-ufP">
-                                            <rect key="frame" x="328" y="0.5" width="50" height="49"/>
+                                            <rect key="frame" x="340" y="0.5" width="50" height="49"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="1kd-8t-0S4"/>
                                                 <constraint firstAttribute="height" constant="50" id="6hx-8Z-OKk"/>
@@ -51,8 +51,8 @@
                                         </button>
                                     </subviews>
                                 </stackView>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cf0-nb-y7J">
-                                    <rect key="frame" x="0.0" y="70" width="378" height="712"/>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cf0-nb-y7J">
+                                    <rect key="frame" x="0.0" y="70" width="390" height="718"/>
                                     <color key="backgroundColor" name="red"/>
                                     <connections>
                                         <outlet property="dataSource" destination="-1" id="NVn-rV-dKK"/>
@@ -65,9 +65,9 @@
                     <color key="backgroundColor" name="red"/>
                     <constraints>
                         <constraint firstItem="Sho-M5-Jeh" firstAttribute="top" secondItem="9G8-UA-fGf" secondAttribute="top" constant="8" id="6tB-cJ-qA0"/>
-                        <constraint firstAttribute="bottom" secondItem="Sho-M5-Jeh" secondAttribute="bottom" constant="8" id="k2n-Jt-lFM"/>
-                        <constraint firstAttribute="trailing" secondItem="Sho-M5-Jeh" secondAttribute="trailing" constant="8" id="qzo-ER-WJN"/>
-                        <constraint firstItem="Sho-M5-Jeh" firstAttribute="leading" secondItem="9G8-UA-fGf" secondAttribute="leading" constant="8" id="yAv-IV-MGp"/>
+                        <constraint firstAttribute="bottom" secondItem="Sho-M5-Jeh" secondAttribute="bottom" constant="2" id="k2n-Jt-lFM"/>
+                        <constraint firstAttribute="trailing" secondItem="Sho-M5-Jeh" secondAttribute="trailing" constant="2" id="qzo-ER-WJN"/>
+                        <constraint firstItem="Sho-M5-Jeh" firstAttribute="leading" secondItem="9G8-UA-fGf" secondAttribute="leading" constant="2" id="yAv-IV-MGp"/>
                     </constraints>
                 </view>
             </subviews>

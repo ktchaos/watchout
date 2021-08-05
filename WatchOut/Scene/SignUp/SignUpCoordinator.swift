@@ -17,21 +17,23 @@ class SignUpCoordinator: NavigationCoordinator {
     
     init() {
         self.rootViewController = UINavigationController()
-        self.rootViewController.navigationBar.isHidden = true
     }
     
     func start() {
         let signUpViewController = SignUpViewController()
-        let signUpViewModel: SignUpViewModel = SignUpViewModel(coordinator: self)
+        let signUpViewModel = SignUpViewModel(coordinator: self)
         signUpViewController.bind(to: signUpViewModel)
         self.rootViewController.modalPresentationStyle = .fullScreen
+        self.rootViewController.isNavigationBarHidden = true
         self.rootViewController.viewControllers = [signUpViewController]
     }
     
-    func backToLogin() {
-        self.free(coordinator: self)
+    func dismiss() {
+        self.rootViewController.dismiss(animated: true) {
+            self.isCompleted?()
+        }
     }
-    
+
     func watcherCreated() {
         let homeCoordinator = HomeCoordinator()
         homeCoordinator.start()
